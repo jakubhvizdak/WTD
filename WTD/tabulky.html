@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabuľky</title>
+    <title>Tabuľka</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,19 +11,19 @@
         <div class="navbar">
             <h1 id="real-madrid-button">REAL MADRID</h1>
             <ul>
-                <li><a href="vysledky.html">Výsledky</a></li>
-                <li><a href="program.html">Program</a></li>
-                <li><a href="tabulky.html">Tabuľky</a></li>
+                <li><a href="história.html">História</a></li>
+                <li><a href="tabulky.html">Tabuľka</a></li>
                 <li><a href="supiska.html">Súpiska</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="spekulacie.html">Prestupy</a></li>
+                <li><a href="galeria.html">Galéria</a></li>
+                <li><a href="quiz.html">Dotazník</a></li>
             </ul>
         </div>
     </nav>
 
 
     <div class="container" id="container">
-    <button onclick="toggleTable()" class="toggle-button"><i class="fas fa-chevron-up"></i> v</button>
+    
     <h2>La Liga</h2>
     <table id="ligaTable">
     <tr>
@@ -281,20 +281,6 @@
 </table>
 </div>
 
-<script> <!-- nefunguje mi to v samostatnom .js súbore kvôli právam, tak to nechám tu -->
-function toggleTable() {
-    var table = document.getElementById("ligaTable");
-    var additionalText = document.getElementById("additionalText");
-
-    if (table.style.display === "none") {
-        table.style.display = "table";
-        additionalText.style.display = "none";
-    } else {
-        table.style.display = "none";
-        additionalText.style.display = "block";
-    }
-}
-</script>
 <script>
       document.getElementById("real-madrid-button").addEventListener("click", function() {
       window.location.href = "index.html";
